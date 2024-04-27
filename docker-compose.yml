@@ -31,7 +31,6 @@ services:
     ports:
       - "3000:3000"
     # webはdbに依存していることを明示
-    # 接続先をdbと記載するだけで使える
     depends_on:
       - db
 volumes:
