@@ -30,6 +30,7 @@ services:
       - .:/myapp
     ports:
       - "3000:3000"
+    # webはdbに依存していることを明示
     depends_on:
       - db
 volumes:
